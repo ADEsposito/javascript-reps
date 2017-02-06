@@ -18,3 +18,21 @@ function transmogrifier(x, y, z) {
 transmogrifier(5, 4, 3);
 transmogrifier(13, 12, 5);
 transmogrifier(42, 13, 7);
+
+
+
+function toonify(accent, sentence) {
+  if(accent === "daffy") {
+    var original = /s/gi;
+    var newSentence = sentence.replace(original, "th");
+    return newSentence
+  }
+  else if(accent === "elmer") {
+    var original = /r/gi;
+    var newSentence = sentence.replace(original, "w");
+    return newSentence
+  }
+  else {
+    return sentence;
+  }
+}
