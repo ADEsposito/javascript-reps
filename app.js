@@ -7,6 +7,14 @@ function lengths(arrayOfStrings) {
   return wordCount;
 }
 
-function transmogrifier(x, y, z) {
 
+
+function transmogrifier(x, y, z) {
+  var product = (x * y);
+  transmogrified = Math.pow(product, z);
+  return transmogrified;
 }
+
+transmogrifier(5, 4, 3);
+transmogrifier(13, 12, 5);
+transmogrifier(42, 13, 7);
