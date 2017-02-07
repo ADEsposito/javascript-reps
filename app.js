@@ -36,3 +36,18 @@ function toonify(accent, sentence) {
     return sentence;
   }
 }
+
+
+
+function wordReverse(string) {
+  var newString = [];
+
+  var splitString = string.split(' ');
+  var reversedString = splitString.reverse();
+
+  for(i = 0; i < reversedString.length; i++) {
+    newString.push(reversedString[i]);
+    //newString.join(' ');
+  }
+  return newString.join(' ');
+}
