@@ -62,15 +62,6 @@ function letterReverse(string) {
 
 
 
-function longest(arrayOfStrings) {
-  var longestWord = '';
-  for(i = 0; i < arrayOfStrings.length; i++) {
-    if(arrayOfStrings[i].length > longestWord.length) {
-      longestWord = arrayOfStrings[i]
-    }
-    else if(arrayOfStrings[i].length === longestWord.length) {
-      longestWord = longestWord;
-    }
-  }
-  return longestWord;
+function repMaster(input, chosenFunction) {
+  return chosenFunction(input) + " proves that I am the rep MASTER!";
 }
