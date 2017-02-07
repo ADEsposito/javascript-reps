@@ -47,7 +47,6 @@ function wordReverse(string) {
 
   for(i = 0; i < reversedString.length; i++) {
     newString.push(reversedString[i]);
-    //newString.join(' ');
   }
   return newString.join(' ');
 }
@@ -59,4 +58,19 @@ function letterReverse(string) {
   newString = splitString.reverse().join('');
   newString = newString.split(' ').reverse().join(' ');
   return newString;
+}
+
+
+
+function longest(arrayOfStrings) {
+  var longestWord = '';
+  for(i = 0; i < arrayOfStrings.length; i++) {
+    if(arrayOfStrings[i].length > longestWord.length) {
+      longestWord = arrayOfStrings[i]
+    }
+    else if(arrayOfStrings[i].length === longestWord.length) {
+      longestWord = longestWord;
+    }
+  }
+  return longestWord;
 }
