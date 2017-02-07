@@ -51,3 +51,12 @@ function wordReverse(string) {
   }
   return newString.join(' ');
 }
+
+
+
+function letterReverse(string) {
+  var splitString = string.split('');
+  newString = splitString.reverse().join('');
+  newString = newString.split(' ').reverse().join(' ');
+  return newString;
+}
